@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    font-family: "Shantell Sans", cursive;
+    overflow-x: hidden; /* Hide scrollbars */
+}
+
+#profil {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    perspective: 500px;
+    left: auto;
+    right: auto;
+    background: linear-gradient(135deg, #05093a, #0C1F5E);
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out;
+    background-image: url(../img/card_bg.png);
+    background-color: #73CCF2;
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #0C1F5E;
+    z-index: 1;
+    line-height: 0.8;
+}
+
+.card p {
+    font-family: "Shantell Sans", cursive;
+    margin: 10px 0;
+    font-size: 1em;
+    color: #0C1F5E;
+    line-height: 0.5;
+}
+
+p {    
+    font-family: "Albert Sans", sans-serif;
+    margin: 20px;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    width: 50px;
+    margin: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color: #0C1F5E;
+    padding-top: 5px;
+}
+
+.socials:hover {
+    background-color: #4076A8;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 800
+<bounce>: Use a value from -100 to 100
+<informality>: Use a value from 0 to 100 */
+
+.shantell-sans-fun {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "BNCE" 100,
+    "INFM" 100,
+    "SPAC" 0;    
+ background-image: linear-gradient(180deg, #036272 0%, #0a4e85 100%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.shantell-sans-tiny {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 100,
+      "INFM" 100,
+      "SPAC" 0;    
+   background-image: linear-gradient(180deg, #036272 0%, #0a4e85 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: .5em;
+  }
+
+  .shantell-sans-h1 {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 100,
+      "INFM" 100,
+      "SPAC" 0;    
+   font-size: 2.5vw;
+   color: #0C1F5E;
+   text-align: center;
+   line-height: 0.5;
+  }
+
+
+.albert-sans-h1 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 0.9;
+    text-align: center;
+    color: #0C1F5E;
+}
+
+#space_1 {
+    height: 175px;
+}
+
+#grid_container {
+    height: 220px;
+    width: 99vw;
+    margin: auto;
+
+    display: flex;
+    animation: 45s linear 1s infinite running scroll;
+}
+
+#grid_container:hover {
+    animation-play-state: paused;
+}
+
+#img_cont {
+    height: 500px;
+    width: calc(100vw - 40px);
+    overflow: hidden;
+    margin: auto;
+}
+
+.img_auto {
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#img_cont {
+    height: 220px;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-2110px);
+    }
+}
+
+#gpt_warning {
+    font-size: xx-small;
+    line-height: 1;
+    margin: 0;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#intro_cont {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #intro_text {
+        width: 100%;
+    }
+
+    .albert-sans-h1{
+        font-size: 10vw;
+    }
+
+    .shantell-sans-h1{
+        font-size: 5vw;
+    }
+
+    #mus_cont {
+        flex-direction: column !important;
+    }
+
+    #intro_cont {
+        width: 100%;
+        flex-direction: column !important; 
+    }
+}
+
+#music_box {
+    height: 400px;
+    width: 500px;
+}
+
+nav {
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background: #0C1F5E;
+    z-index: 2;
+} 
+
+.right-text {
+    width: 75%;
+    text-align: right;
+    align-items: end;
+}
+
+.left-text {
+    width: 75%;
+    text-align: left;
+    align-items: start;
+}
+
+nav a {
+    color: #73CCF2;
+    text-decoration: none;
+}
+
+nav a:checked {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#proj_pht {
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+}
+
+#my_stuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mus_cont {
+    display: flex;
+    flex-direction: row;
+}
+
+#proj_vid {
+    width: 75%;
+    aspect-ratio: 16 / 9;
+    border-radius: 25px;
+    transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#proj_vid:hover {
+    width: 80%;
+    transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#vid_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background: #0C1F5E;
+}
+
+footer p {
+    color: #ffffff;
+}

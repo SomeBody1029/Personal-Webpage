@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+
+    <!-- Shantell Sans Betűtípus -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght,BNCE,INFM@300..800,-100..100,0..100&display=swap" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+    
+    <!-- Albert Sans Betűtípus -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Portfólió képek -->
+    <link rel="preload" as="image" href="./img/1.jpg">
+    <link rel="preload" as="image" href="./img/2.jpg">
+    <link rel="preload" as="image" href="./img/3.jpg">
+    <link rel="preload" as="image" href="./img/4.jpg">
+    <link rel="preload" as="image" href="./img/5.jpg">
+    <link rel="preload" as="image" href="./img/6.jpg">
+    <link rel="preload" as="image" href="./img/7.jpg">
+    <link rel="preload" as="image" href="./img/8.jpg">
+    <link rel="preload" as="image" href="./img/9.jpg">
+
+    <style>
+  
+    </style>
+</head>
+<body onload="év_calc()">
+    <nav>
+        <a href="#about-me">Magamról</a>
+        <a href="#projects">Projektjeim</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    
+    <header class="card_container">
+    
+        <div class="card">
+        
+        <div id="space_1"></div>
+        
+        <h1>Farkas<br>Péter</h1>
+        
+        <p>Mindenember</p>
+        
+        <div id="socials">
+        
+            <button class="socials"><img src="./logos/bluesky.svg" alt="BlueSky" class="icons"></button>
+        
+            <button class="socials"><img src="./logos/reddit.svg" alt="Reddit" class="icons"></button>
+        
+            <button class="socials"><img src="./logos/facebook.svg" alt="FaceBook" class="icons"></button>
+        
+        
+            <button class="socials"><img src="./logos/youtube.svg" alt="YouTube" class="icons"></button>
+        
+        </div>
+        
+        <p id="gpt_warning">Ez a kártya módosított<br>ChatGPT kóddal készült</p>
+        <!-- <img id="profil" src="./profil.png"/> -->
+    </header>
+    </div>
+    <main id="intro">
+        <h1 class="albert-sans-h1" id="about-me">Magamról</h1>
+        <div id="intro_cont">
+        
+            <p class="left-text"/>Én <span class="shantell-sans-fun">Farkas Péter</span> vagyok,<br>ebben a pillanatban <span class="shantell-sans-fun" id="intro_year">X éves</span> vagyok, és szeretek tanulni.<br><span class="shantell-sans-fun">[például ennek a weboldalnak a programozása]</span><br>Szinte az összes szabadidőmben próbálok valami újat tanulni, lehet ez programozás, 3D modellezés, fotózás vagy film, videó és zenekészítés. Ebben a pillanatban a Soproni Egyetem Kommunikáció & Médiatudomány szakán vagyok az 5. szemeszterben.</p>
+            <p class="right-text">A legtöbb tudásomat otthonról hoztam és az egyetem ezeket megfelelően kiegészítette. A főbb szoftverek, amiket használok:<br>FL Studio a zenekészítéshez, Adobe After Effects, Premiere Pro és a DaVinci a videókészítéshez, VSCode a programozáshoz, Figma a grafikus dolgokhoz (prezentációk, weboldalak, vagy grafikák videókba) és a Notion a jegyzetíráshoz és ötletezéshez.</p>
+        </div>
+    </main>
+    
+    <main id="my_stuff">
+        <h1 class="albert-sans-h1" id="projects">Projektjeim</h1>
+        
+        <h1 class="shantell-sans-h1">Fényképészet</h1>
+        
+        <section id="img_cont">
+            <div id="grid_container">
+                <input type="image" src="./proj/img/1.jpg" name="1" class="img_auto" id="grid_1" />
+                <input type="image" src="./proj/img/2.jpg" name="2" class="img_auto" id="grid_2" />
+                <input type="image" src="./proj/img/3.jpg" name="3" class="img_auto" id="grid_3" />
+                <input type="image" src="./proj/img/4.jpg" name="4" class="img_auto" id="grid_4" />
+                <input type="image" src="./proj/img/5.jpg" name="5" class="img_auto" id="grid_5" />
+                <input type="image" src="./proj/img/6.jpg" name="6" class="img_auto" id="grid_6" />
+                <input type="image" src="./proj/img/7.jpg" name="7" class="img_auto" id="grid_7" />
+                <input type="image" src="./proj/img/8.jpg" name="8" class="img_auto" id="grid_8" />
+                <input type="image" src="./proj/img/9.jpg" name="9" class="img_auto" id="grid_9" />
+                <input type="image" src="./proj/img/1.jpg" name="1" class="img_auto" id="grid_1_1" />
+                <input type="image" src="./proj/img/2.jpg" name="2" class="img_auto" id="grid_1_2" />
+                <input type="image" src="./proj/img/3.jpg" name="3" class="img_auto" id="grid_1_3" />
+                <input type="image" src="./proj/img/4.jpg" name="4" class="img_auto" id="grid_1_4" />
+                <input type="image" src="./proj/img/5.jpg" name="5" class="img_auto" id="grid_1_5" />
+                <input type="image" src="./proj/img/6.jpg" name="6" class="img_auto" id="grid_1_6" />
+                <input type="image" src="./proj/img/7.jpg" name="7" class="img_auto" id="grid_1_7" />
+                <input type="image" src="./proj/img/8.jpg" name="8" class="img_auto" id="grid_1_8" />
+                <input type="image" src="./proj/img/9.jpg" name="9" class="img_auto" id="grid_1_9" />
+            </div>
+        </section>
+        
+        <p id="proj_pht">Az egyik kedvenc hobbin a fényképezés.<br>Még nincs rendes kamerán <span class="shantell-sans-tiny">[ebben a pillanatban egy Samsung S24 Ultra-t használok]</span>, de szeretnék egyet beszerezni.<br>A képek többsége nyers, általában szeretem meghagyni a <span class="shantell-sans-tiny">[telefon által koregált]</span> természetes képet, és néha javítok rajta Photoshop-ban.</p>
+        
+        <h1 class="shantell-sans-h1">Zene</h1>
+        
+        <div id="mus_cont">
+            <audio src="./proj/proj_song1.wav" controls ></audio>
+            <audio src="./proj/proj_song2.wav" controls ></audio>
+            <audio src="./proj/proj_song3.wav" controls ></audio>
+        </div>
+        
+        <p id="proj_pht">Ahogy fentebb mondtam szeretek zenéket készíteni <span class="shantell-sans-tiny">[itt halható néhány, még nem kiadott dal]</span>.<br>Néha egy váratlanol jól hangzó ének, vagy egy fülbemászó ritmus is elég nekem ahhoz, hogy valami nagyobban létrehozzak.<br>Sajnos beleesek a tökéletesség elérésének végtelen csatájába, így nehezen tudom ezeket kitenni az internetre.</p>
+        
+        <h1 class="shantell-sans-h1">Videókészítés</h1>
+
+        <div id="vid_cont">
+            <video controls id="proj_vid">
+                <source src="./proj/proj_vid.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p id="proj_pht">Ahogy fentebb mondtam, még nincs kamerám így a telefonom a fő videókészítőm, de a kar engedélyével sokszor használhatjuk a kar kameráit is.<br>Mivel én inkább egyedül szeretek dolgozni otthon <span class="shantell-sans-tiny">[ez már javulgat]</span>, így csak úgy tudok javítani, ha én vásárlom meg hozzá az eszközöket.</p>
+        
+        <footer id="kontakt">
+            <p>Kontakt:</p>
+            <p>E-mail: farkas.peter.gabor@gmail.com</p>
+        </footer>
+
+    </main>
+
+
+    <script>
+        function év_calc(){
+        const year_txt = document.getElementById('intro_year');
+        const year_most = new Date().getFullYear();
+        const year_birth = 2002;
+        const year = year_most - year_birth;
+        year_txt.innerHTML = `${year} éves` ;
+        }
+
+    </script>
+    <script src="./js/card.js"></script>
+</body>
+</html>
